@@ -4,10 +4,19 @@
     "type": "library",
     "license": "mit",
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=8.2"
+    },
     "autoload": {
         "psr-4": {
             "wdd\\slug\\": "src/"
+        }
+    },
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": "wdd\\Slug\\SlugServiceProvider"
         }
     }
 }
